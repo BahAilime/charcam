@@ -51,7 +51,7 @@ function draw() {
       g = camera.pixels[index+1]
       b = camera.pixels[index+2]
       noStroke()
-      let char = characters[Math.floor(characters.length*((r + g + b)/3)/255)]
+      let char = characters[Math.floor(characters.length*((r + g + b)/3)/255)-1]
       fill(color(r, g, b))
       text(char, i*pixelW, j*pixelW, i*pixelW+pixelW, j*pixelW+pixelW)
     }
